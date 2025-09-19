@@ -1,0 +1,1112 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omaïma Belgacem - Future Ingénieure Cybersécurité | Monaco Cyber Sécurité</title>
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+ body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #444 0%, #555 50%, #666 100%);
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+
+  }
+
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+     ul {
+    list-style-position: outside; 
+    padding-left: 0; 
+    margin-left: 0;
+}
+
+ul li {
+    margin-left: 1em; /* espace propre entre la puce et le texte */
+    text-indent: 0;   /* évite tout alinéa */
+}
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ff4d4d;
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .monaco-logo {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            opacity: 0.9;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateX(-50%) translateY(-50px); opacity: 0; }
+            to { transform: translateX(-50%) translateY(0); opacity: 0.9; }
+        }
+
+        .hero-content {
+            animation: fadeInUp 1.5s ease-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero-photo {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 4px solid #ff4d4d;
+            box-shadow: 0 0 30px rgba(255,77,77, 0.5);
+            animation: photoGlow 3s ease-in-out infinite alternate;
+        }
+
+        .profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%; /* 👈 Cette valeur recentre bien ton visage */
+}
+
+
+        @keyframes photoGlow {
+            from { box-shadow: 0 0 20px rgba(255,77,77, 0.3); }
+            to { box-shadow: 0 0 40px rgba(255,77,77, 0.7); }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff4d4d, #ff9999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255,77,77, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff4d4d, #ff9999);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255,77,77, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255,77,77, 0.4);
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(255,77,77, 0.3); }
+            50% { box-shadow: 0 10px 30px rgba(255,77,77, 0.6); }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        .content-section {
+            position: relative;
+            z-index: 10;
+            min-height: 100vh;
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #ff4d4d, #ff9999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .motivation-section {
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .motivation-card {
+            background: linear-gradient(135deg, rgba(255,77,77, 0.15), rgba(255,77,77, 0.15));
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .motivation-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,77,77, 0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .motivation-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .motivation-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .motivation-highlight {
+            font-size: 1.3rem !important;
+            background: linear-gradient(45deg, #ff4d4d, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .motivation-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .motivation-icon {
+            font-size: 3rem;
+            animation: bounce 2s infinite;
+        }
+
+        .motivation-icon:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .motivation-icon:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,77,77, 0.2);
+            box-shadow: 0 20px 40px rgba(255,77,77, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ff4d4d;
+            margin-bottom: 10px;
+        }
+
+        .skills-section {
+            background: rgba(255,77,77, 0.3);
+            padding: 80px 0;
+            margin: 60px 0;
+            border-radius: 30px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: linear-gradient(135deg, rgba(255,77,77, 0.1), rgba(255,77,77, 0.1));
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,77,77, 0.2));
+        }
+
+        .soft-skills-section {
+            background: linear-gradient(135deg, rgba(255,77,77, 0.1), rgba(255,77,77, 0.1));
+            padding: 60px 0;
+            margin: 60px 0;
+            border-radius: 30px;
+        }
+
+        .soft-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .soft-skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            border-radius: 25px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .soft-skill-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255,77,77, 0.1));
+            box-shadow: 0 10px 20px rgba(255,77,77, 0.3);
+        }
+
+        .interests-section {
+            background: rgba(255,77,77, 0.2);
+            padding: 60px 0;
+            margin: 60px 0;
+            border-radius: 30px;
+        }
+
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .interest-card {
+            background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,77,77, 0.1));
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .interest-card:hover {
+            transform: scale(1.05);
+            background: rgba(0, 212, 170, 0.2);
+            box-shadow: 0 15px 30px rgba(0, 212, 170, 0.3);
+        }
+
+        .interest-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 60px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #ff4d4d, #ffffff);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 40px 0;
+            opacity: 0;
+            animation: slideInTimeline 1s ease forwards;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: 50%;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50%;
+            margin-right: 0;
+            text-align: left;
+        }
+
+        .timeline-content {
+            background: rgba(255,77,77, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: #ff4d4d;
+            border-radius: 50%;
+            border: 4px solid #1a3d5c;
+            z-index: 10;
+        }
+
+        @keyframes slideInTimeline {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, rgba(255,255,255, 0.1), rgba(255,77,77, 0.1));
+            padding: 80px 0;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255, 0.2);
+        }
+
+        .floating-tech {
+            position: fixed;
+            font-size: 2rem;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 2;
+            animation: floatTech 20s infinite linear;
+        }
+
+        @keyframes floatTech {
+            0% { transform: translateX(-100px) rotate(0deg); }
+            100% { transform: translateX(calc(100vw + 100px)) rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .timeline::before { left: 20px; }
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+            }
+            .timeline-dot { left: 20px; }
+            .hero-photo {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 2rem;
+            }
+            .motivation-card {
+                padding: 30px 20px;
+            }
+            .motivation-content p {
+                font-size: 1.1rem;
+            }
+            .motivation-icons {
+                gap: 20px;
+            }
+            .motivation-icon {
+                font-size: 2rem;
+            }
+            .soft-skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+            .interests-grid {
+                grid-template-columns: 1fr;
+            }: translate(0, 0) rotate(360deg); }
+}
+
+
+  </style>
+
+</head>
+<body>
+  <div class="floating-particles" id="particles"></div>
+  
+  <!-- Icônes flottantes cybersécurité -->
+  <div class="floating-tech" style="top:10%;animation-delay:0s;">🔒</div>
+  <div class="floating-tech" style="top:30%;animation-delay:5s;">💻</div>
+  <div class="floating-tech" style="top:50%;animation-delay:10s;">🛡️</div>
+  <div class="floating-tech" style="top:70%;animation-delay:15s;">⚡</div>
+
+ <section class="hero-section">
+     
+      <svg class="monaco-logo" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+              <style>
+                  .logo-text { fill: #e30613; font-family: Arial, sans-serif; font-weight: bold; }
+                  .logo-main { font-size: 40px; }
+                  .logo-sub { font-size: 35px; }
+                  .logo-symbol { fill: #e30613; }
+              </style>
+          </defs>
+          <text x="10" y="35" class="logo-text logo-main">Monaco</text>
+          <g class="logo-symbol">
+              <path d="M15,45 Q25,40 35,45 Q25,50 15,45 Z"/>
+              <circle cx="25" cy="45" r="2"/>
+          </g>
+          <text x="45" y="58" class="logo-text logo-sub">cyber sécurité</text>
+      </svg>
+
+      <div class="hero-content">
+<div class="hero-photo">
+<img src="ma-photo.jpg" alt="Ma photo" class="profile-photo">
+</div>
+
+      <h1 class="hero-title">Omaïma Belgacem</h1>
+      <p class="hero-subtitle">Étudiante ingénieure spécialisée en Cybersécurité</p>
+      <p style="margin-bottom:20px;">Recherche d’un premier stage chez Monaco cyber sécurité</p>
+      <a href="#about" class="cta-button">Découvrir mon profil 🚀</a>
+
+      
+  </section>
+
+ <div class="scroll-indicator">
+            <div style="font-size: 2rem;">⬇️</div>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <div class="container">
+            <!-- Section Motivation -->
+            <div class="motivation-section">
+                <h3 class="section-title">Ma Motivation pour Monaco cyber sécurité</h3>
+                <div class="motivation-card">
+                    <div class="motivation-content">
+                        <p>En tant qu’étudiante de deuxième année en prépa intégrée spécialisée en informatique, je souhaite effectuer mon stage de 4 mois chez Monaco cyber sécurité pour mettre en pratique mes compétences et évoluer dans un environnement d’excellence en cybersécurité</p>
+                        <p class="motivation-highlight"><strong>Aujourd'hui, je souhaite sincèrement que cette aventure commence chez vous , Monaco cyber sécurité.</strong></p>
+                    </div>
+                    <div class="motivation-icons">
+                        <span class="motivation-icon">👩🏽‍💻</span>
+                        <span class="motivation-icon">🤝</span>
+                        <span class="motivation-icon">🚀</span>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+  .skills-section {
+    margin: 40px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column; /* pour afficher les blocs verticalement */
+    gap: 20px; /* espace entre les blocs */
+  }
+
+  .skill-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+</style>
+
+<style>
+  .skills-section {
+    margin: 40px 0;
+    text-align: center; /* centre les titres et textes */
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column; /* blocs en colonne */
+    gap: 20px;
+    align-items: center; /* centre horizontalement les blocs */
+  }
+
+  .skill-item {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 300px; /* largeur fixe pour tous */
+    box-sizing: border-box;
+  }
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .skill-item {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+  }
+
+  .skill-item h4 {
+    margin-bottom: 5px;
+  }
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .skill-item {
+    background-color: #f5f5f5; /* gris très clair */
+    padding: 15px;
+    border-radius: 10px;
+    font-family: inherit;
+    color: inherit;
+    text-align: left;
+  }
+
+  .skill-item h4 {
+    margin-bottom: 5px;
+  }
+  .skills-section {
+        max-width: 500px;
+        margin: 0 auto 15px auto;
+        padding: 10px 15px;
+    }
+</style>
+
+<div class="skills-section">
+  <h3 class="section-title">Compétences Techniques</h3>
+  <div class="section-grid">
+    <div class="interest-card">
+      <h4>🔒 Cybersécurité</h4>
+      <p>Spécialisation en cours</p>
+    </div>
+    <div class="interest-card">
+      <h4>💾 Base de données</h4>
+      <p>MySQL - Conception relationnelle</p>
+    </div>
+    <div class="interest-card">
+      <h4>⚡ Électronique</h4>
+      <p>Arduino - Transmission de données</p>
+    </div>
+    <div class="interest-card">
+      <h4>💻 Programmation</h4>
+      <p>C++, Python, HTML</p>
+    </div>
+    <div class="interest-card">
+      <h4>🎨 Design</h4>
+      <p>Fusion 360, Canva</p>
+    </div>
+    <div class="interest-card">
+      <h4>📡 IoT & Signaux</h4>
+      <p>Codage/décodage, ondes</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Nouvelle section Soft Skills -->
+            <div class="soft-skills-section">
+                <h3 class="section-title">Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">🌍 Anglais C1</div>
+                    <div class="soft-skill-item">🇪🇸 Espagnol B1</div>
+                    <div class="soft-skill-item">⚡ Dynamique</div>
+                    <div class="soft-skill-item">🔍 Curieuse</div>
+                    <div class="soft-skill-item">🎯 Autonome</div>
+                    <div class="soft-skill-item">👂 À l'écoute</div>
+                    <div class="soft-skill-item">🤝 Travail en équipe</div>
+                    <div class="soft-skill-item">🎨 Créative</div>
+                </div>
+            </div>
+
+            <!-- Nouvelle section Centres d'Intérêts -->
+            <div class="interests-section">
+                <h3 class="section-title">Centres d'Intérêts</h3>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <span class="interest-icon">💪</span>
+                        <h4>Sportive</h4>
+                        <p><strong>Musculation</strong> - Discipline et dépassement de soi</p>
+                        <p><strong>Danse</strong> - Créativité et expression artistique</p>
+                    </div>
+                    <div class="interest-card">
+                        <span class="interest-icon">✈️</span>
+                        <h4>Voyages</h4>
+                        <p>Découverte de nouvelles cultures</p>
+                        <p>Ouverture d'esprit et adaptabilité</p>
+                    </div>
+                </div>
+            </div>
+            <style>
+    .timeline-item {
+        max-width: 400px;
+        margin: 0 auto 15px auto;
+        padding: 10px 15px;
+    }
+  </style>
+
+            <h3 class="section-title">Mon Parcours Académique</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2024-2030</h4>
+                        <p><strong>CESI École d'ingénieur, Prépa Intégrée cycle ingénieur</strong></p>
+                        <p><em>Spécialité Cybersécurité, Nice</em></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2022-2024</h4>
+                        <p><strong>Lycée des Eucalyptus, Classes Préparatoires PTSI/PT</strong></p>
+                        <p><em>Nice</em></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>2022</h4>
+                        <p><strong>Lycée des Eucalyptus</strong></p>
+                        <p><em>Obtention du bac Scientifique avec mention</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title">4 Raisons de me choisir chez Monaco cyber sécurité</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">💼</div>
+                    <h4>Compétences Techniques</h4>
+                    <p>MySQL, Arduino, C++/Python, HTML, Fusion 360</p>
+                    <small>Expertise en base de données et IoT</small>
+                </div>
+               <div class="stat-card">
+               <div class="stat-number">🧩</div>
+            <h4>Apprentissage rapide</h4>
+            <p>Curiosité • Adaptabilité • Esprit d’analyse</p>
+        <small>Capacité à assimiler vite de nouveaux enjeux technologiques</small>
+        </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">⚡</div>
+                    <h4>Énergie++</h4>
+                    <p>Membre BDE CESI • Créative & Autonome • Leadership</p>
+                    <small>Dynamisme et esprit d'équipe</small>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">🌍</div>
+                    <h4>Profil International</h4>
+                    <p>Anglais C1 • Espagnol B1 • Vision globale</p>
+                    <small>Communication multiculturelle</small>
+                </div>
+            </div>
+            <style>
+                .timeline-item {
+                 max-width: 900px;
+                 margin: 0 auto 15px auto;
+                    padding: 10px 15px;
+                     }
+    </style>
+            <h3 class="section-title">Réalisations Concrètes</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Projet Citoyen pour le Secours Populaire</h4>
+                        <p><strong>Septembre 2021</strong></p>
+                        <p>Participation à une collecte de vêtements et de nourriture pour l'association du secours populaire</p>
+                    </div>
+               <div class="timeline">
+
+  <!-- Bulle principale -->
+<div class="timeline-item right main-project">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h4>Mes projets en Informatiques 2025</h4>
+        <p>Ensemble des projets réalisés durant ma première année</p>
+    </div>
+</div>
+
+<!-- Sous-bulles -->
+<div class="timeline-item sub-project">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content sub-bubble">
+        <h4>1er projet - Conception et Sécurisation d'une Base de donnée</h4>
+        <p>Modéliser et implémenter une BDD relationnelle robuste et sécurisée</p>
+    </div>
+</div>
+
+<div class="timeline-item sub-project">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content sub-bubble">
+        <h4>2ème projet – Système de communication sécurisée par ondes radio</h4>
+        <p>Développement d'un protocole de transmission chiffrée avec déchiffrement automatisé</p>
+    </div>
+</div>
+
+<div class="timeline-item sub-project">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content sub-bubble">
+        <h4>3ème projet – Plateforme Interactive de comparaison Automobile</h4>
+        <p>Développer une interface utilisateur sécurisée avec des traitements de données</p>
+    </div>
+</div>
+
+<div class="timeline-item sub-project">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content sub-bubble">
+        <h4>4ème projet – Capteur IoT de Qualité de l'Air</h4>
+        <p>Concevoir un dispositif IoT sécurisé avec analyse de viabilité commerciale</p>
+    </div>
+</div>
+
+<style>
+/* Style commun pour sous-projets */
+.timeline-item.sub-project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    max-width: 700px;
+    position: relative;
+}
+
+/* Alternance gauche/droite des bulles */
+.timeline-item.sub-project:nth-child(odd) {
+    justify-content: flex-start;
+    margin-right: 40%; /* Rapproche de la frise */
+}
+
+.timeline-item.sub-project:nth-child(even) {
+    justify-content: flex-end;
+    margin-left: 40%;  /* Rapproche de la frise */
+    flex-direction: row-reverse;
+}
+
+/* Style des bulles */
+.timeline-content.sub-bubble {
+    border-radius: 25px 5px 25px 25px;
+    background: rgba(255,255,255, 0.374);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(255,77,77,0.1);
+    padding: 15px 20px;
+    max-width: 350px;
+}
+
+/* Point sur la frise */
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-item.sub-project {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-content: center !important;
+        flex-direction: row !important;
+    }
+    .timeline-content.sub-bubble {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .timeline-dot {
+        left: 10px;
+        transform: none;
+    }
+
+
+
+
+
+</style>
+
+</div>
+
+
+
+
+
+
+
+</div>
+                </div>
+            </div>
+        </div>
+
+         
+    </section>
+    
+    
+   <style>
+  .experience-section, .schneider-section {
+      background: rgba(255,255, 255,0.3);
+      padding: 40px 20px;
+      border-radius: 20px;
+      margin: 40px 0;
+      border: 1px solid rgba(255,77,77, 0.3);
+    }
+
+  .experience-card, .schneider-card {
+      background: rgba(255, 77,77, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+    }
+
+
+   .experience-card h4, .experience-card h5, 
+    .schneider-card h3 {
+      color: #;
+      margin-bottom: 15px;
+    }
+
+  
+
+  .experience-card ul, .schneider-card p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .experience-card li {
+      margin-bottom: 8px;
+    }
+
+  .schneider-section h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+  }
+
+  .schneider-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ff4d4d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+</style>
+
+
+<!-- Section Expériences -->
+<section class="experience-section">
+  <div class="container">
+    <h3 class="section-title">Mes expériences professionnelles</h3>
+
+    <div class="experience-card">
+      <h4>Septembre 2023 - Aujourd'hui</h4>
+      <p><strong>Vendeuse - Boutique Hublot Mode Marine</strong>, Nice</p>
+      <p><em>Travail pendant les vacances et week-ends</em></p>
+      <ul style="margin-top:10px; line-height:1.6;">
+        <li>Accueil et conseil client</li>
+        <li>Gestion des ventes et encaissements</li>
+        <li>Mise en valeur des produits en boutique</li>
+        <li>Développement des compétences en communication et relation client</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <h5>Septembre 2025</h5>
+      <p><strong>Membre du Bureau des Étudiants (BDE) Ecole d'ingénieur CESI – Pôle Communication</strong>, Nice</p>
+      <p><em>Engagement associatif étudiant</em></p>
+      <ul style="margin-top:10px; line-height:1.6;">
+        <li>Gestion de la communication interne et externe</li>
+        <li>Création de supports visuels et publications sur les réseaux sociaux</li>
+        <li>Organisation et promotion d’événements étudiants</li>
+        <li>Travail en équipe et développement des compétences en communication</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Section Schneider Electric -->
+<section class="experience-section">
+  <div class="container">
+    <h2 class="section-title">Prête à rejoindre votre équipe chez Monaco cyber sécurité </h2>
+
+    <div class="experience-card">
+      <h3>🎯 Objectifs</h3>
+      <p><strong>Stage :</strong> Durée de 4 mois , du 7 avril eu 24 juillet 2026 dans le domaine de l'informatique</p>
+      <p><strong>Alternance :</strong> Poursuivre avec 3 ans en alternance au sein de votre entreprise afin de me spécialiser dans la cybersécurité</p>
+    </div>
+
+    <div class="experience-card">
+      <h3>📧 Contact Direct</h3>
+      <p><strong>Email :</strong> omai.belgacem@gmail.com</p>
+      <p><strong>Téléphone :</strong> 07 68 35 21 54</p>
+      <p><strong>LinkedIn :</strong> Omaïma Belgacem</p>
+    </div>
+  </div>
+</section>
+ 
+ <style>
+ .button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+</style>     
+            
+            <div class="button-container">
+          <a href="mailto:omai.belgacem@gmail.com?subject=Opportunité Monaco cyber sécurité&body=Bonjour Omaïma,%0D%0A%0D%0ANous avons consulté votre profil et souhaitons échanger avec vous concernant nos opportunités chez Monaco cyber sécurité.%0D%0A%0D%0ACordialement" class="cta-button">
+                    🚀 Contactez-moi maintenant
+                </a>
+            </div>
