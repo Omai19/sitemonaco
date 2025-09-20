@@ -51,12 +51,7 @@ ul li {
             opacity: 0.6;
         }
 
-        @keyframes float {
-            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-            10% { opacity: 0.6; }
-            90% { opacity: 0.6; }
-            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
-        }
+       
 @media print {
   .cta-button, .scroll-indicator, .hero-photo img {
     display: none; /* Masquer certains éléments */
@@ -1115,6 +1110,12 @@ ul li {
       text-align: center;
       margin-top: 40px;
     }
+    @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
 
 </style>     
             
@@ -1123,3 +1124,4 @@ ul li {
                     🚀 Contactez-moi maintenant
                 </a>
             </div>
+   
